@@ -52,7 +52,7 @@ Random Game: Use the "Random Game" feature to get a random game suggestion.
 Instructional Videos: Watch embedded YouTube videos for game instructions.
 
 ## Gif of the Application
-![Application Demo](https://raw.githubusercontent.com/mhope21/gamenight/main/images/GameNight.gif)
+![Application Demo](https://raw.githubusercontent.com/mhope21/gamenight/app/assets/images/GameNight.gif)
 
 
 ## Future Enhancements
