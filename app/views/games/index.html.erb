@@ -1,0 +1,29 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Games" %>
+<div class="mt-5 ms-3">
+  <%= link_to "Back to Menu", root_path %>
+</div>
+<h1 class="text-center">Games</h1>
+
+
+<div id="games" class="mt-5">
+  <div class="row justify-content-center">
+  <% @games.each do |game| %>
+    <div class="card p-4 m-5" style="width: 18rem; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); border-radius: 5px;" >
+      <div class="card-header"><%= game.name %></div>
+      <%= image_tag(game.image, class: "card-img-top", alt: "Game box cover image") if game.image.attached? %>
+      <div class="card-body">
+        <p class="card-text">
+          <%= game.description %>
+          <div class="btn btn-primary btn-sm d-flex align-items-center mt-3" ><%= link_to "Show this game", game, class:"text-white", style: "text-decoration: none;" %></div>
+        </p>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>
+
+
+
+

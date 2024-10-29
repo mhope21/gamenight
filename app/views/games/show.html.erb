@@ -1,0 +1,30 @@
+<p style="color: green"><%= notice %></p>
+<h1 class="text-center"><%= @game.name %> </h1>
+<div class="d-flex justify-content-center mt-5">
+<div class="card" style="width: 40rem; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); border-radius: 5px;">
+  <%= image_tag(@game.image, class: "card-img-top", alt: "Game box cover image") if @game.image.attached? %>
+  <div class="card-body">
+    <h5 class="card-title">Description:</h5>
+    <p class="card-text"><%= @game.description %></p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><h5>Max players:</h5> <%= @game.max_players %></li>
+    <li class="list-group-item"><h5>Playing Time (in minutes):</h5> <%= @game.playing_time %></li>
+    <li class="list-group-item d-flex justify-content-center"><% if @game.video_url.present? %>
+        <div class="video">
+            <iframe width="560" height="315" src="<%= @game.video_url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    <% end %></li>
+  </ul>
+  <div class="card-body">
+    <div class="btn-group d-flex justify-content-center" role="group" aria-label="Game Buttons">
+    <button type="button" class="btn btn-primary"><%= link_to "Edit this game", edit_game_path(@game), class: "text-white", style: "text-decoration: none;" %></button>
+  <button type="button" class="btn btn-success"><%= link_to "Back to games", games_path, class: "text-white", style: "text-decoration: none;" %></button>
+
+  <button type="button" class="btn btn-danger"><%= link_to "Destroy this game", @game, method: :delete, class: "text-white", style: "text-decoration: none;" %></button>
+    </div>
+  </div>
+</div>
+</div>
+
+

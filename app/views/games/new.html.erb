@@ -1,0 +1,15 @@
+<% content_for :title, "New game" %>
+
+<h1 class="mb-5 text-center">New game</h1>
+<div class="d-flex justify-content-center mt-5">
+<div class="card p-4" style="width: 40rem; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); border-radius: 5px;" >
+
+<%= render "form", game: @game %>
+
+<br>
+
+<div class="text-center">
+  <%= link_to "Back to games", games_path %>
+</div>
+</div>
+</div>

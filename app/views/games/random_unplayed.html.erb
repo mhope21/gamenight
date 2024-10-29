@@ -1,0 +1,32 @@
+<div class="ms-3 mt-5">
+    <%= link_to "Back to Menu", root_path %>
+  </div>
+<h1 class="text-center mt-5">Your chosen game for tonight is:</h1>
+<div id="random-game">
+  <% if @game %>
+    <div class="d-flex justify-content-center mt-5">
+<div class="card" style="width: 40rem; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); border-radius: 5px;">
+  <%= image_tag(@game.image, class: "card-img-top", alt: "Game box cover image") if @game.image.attached? %>
+  <div class="card-body">
+    <h5 class="card-title">Description:</h5>
+    <p class="card-text"><%= @game.description %></p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><h5>Max players:</h5> <%= @game.max_players %></li>
+    <li class="list-group-item"><h5>Playing Time (in minutes):</h5> <%= @game.playing_time %></li>
+    <li class="list-group-item d-flex justify-content-center"><% if @game.video_url.present? %>
+        <div class="video">
+            <iframe width="560" height="315" src="<%= @game.video_url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    <% end %></li>
+  </ul>
+ 
+</div>
+</div>
+
+  <% else %>
+    <p>No games available.</p>
+  <% end %>
+  </div>
+  <h1 class="text-center mt-3 mb-5">Enjoy!</h1>
+  
