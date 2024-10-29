@@ -1,7 +1,7 @@
-## Overview
+# Overview
 Welcome to the Game Night App! This application helps you manage your game collection and suggests a random game to play. When a game is selected, it’s marked as played. Once all games have been played, the app resets the status so you can start fresh. Perfect for ensuring you never run out of fun!
 
-# Features
+## Features
 Game Management: Add, edit, and delete games in your collection.
 
 Random Game Selection: Suggests a random unplayed game to keep things exciting.
@@ -12,7 +12,7 @@ Image Support: Attach images to your games for a visually appealing collection.
 
 YouTube Integration: Embed instructional videos to guide you through the gameplay.
 
-# Installation
+## Installation
 Clone the repository:
 
 bash
@@ -42,7 +42,7 @@ bash
 Copy
 rails s
 
-# Usage
+## Usage
 Add Games: Go to the "Add New Game" section to add games to your collection.
 
 View Games: Browse all your games in the "Show All Games" section.
@@ -51,19 +51,19 @@ Random Game: Use the "Random Game" feature to get a random game suggestion.
 
 Instructional Videos: Watch embedded YouTube videos for game instructions.
 
-# Gif of the Application
-![Application Demo](https://github.com/mhope21/gamenight/blob/main/images/GameNight.gif)
+## Gif of the Application
+![Application Demo](https://raw.githubusercontent.com/mhope21/gamenight/main/images/GameNight.gif)
 
 
-# Future Enhancements
+## Future Enhancements
 Increase Scale: Scale the app for multiple users.
 
 User Accounts: Implement user authentication for personalized game collections.
 
 Advanced Recommendations: Use machine learning to suggest games based on preferences.
 
-# Contributing
+## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
 
-# License
+## License
 This project is licensed under the MIT License.
