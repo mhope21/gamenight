@@ -1,24 +1,69 @@
-# README
+## Overview
+Welcome to the Game Night App! This application helps you manage your game collection and suggests a random game to play. When a game is selected, it’s marked as played. Once all games have been played, the app resets the status so you can start fresh. Perfect for ensuring you never run out of fun!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Features
+Game Management: Add, edit, and delete games in your collection.
 
-Things you may want to cover:
+Random Game Selection: Suggests a random unplayed game to keep things exciting.
 
-* Ruby version
+Status Tracking: Tracks games that have been played and resets once all games are played.
 
-* System dependencies
+Image Support: Attach images to your games for a visually appealing collection.
 
-* Configuration
+YouTube Integration: Embed instructional videos to guide you through the gameplay.
 
-* Database creation
+# Installation
+Clone the repository:
 
-* Database initialization
+bash
 
-* How to run the test suite
+Copy
+git clone https://github.com/yourusername/gamenight.git
+cd gamenight
+Install dependencies:
 
-* Services (job queues, cache servers, search engines, etc.)
+bash
 
-* Deployment instructions
+Copy
+bundle install
+yarn install
+Set up the database:
 
-* ...
+bash
+
+Copy
+rails db:create
+rails db:migrate
+rails db:seed
+Start the server:
+
+bash
+
+Copy
+rails s
+
+# Usage
+Add Games: Go to the "Add New Game" section to add games to your collection.
+
+View Games: Browse all your games in the "Show All Games" section.
+
+Random Game: Use the "Random Game" feature to get a random game suggestion.
+
+Instructional Videos: Watch embedded YouTube videos for game instructions.
+
+# Gif of the Application
+![Application Demo](https://github.com/mhope21/gamenight/blob/main/images/GameNight.gif)
+
+
+# Future Enhancements
+Increase Scale: Scale the app for multiple users.
+
+User Accounts: Implement user authentication for personalized game collections.
+
+Advanced Recommendations: Use machine learning to suggest games based on preferences.
+
+# Contributing
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+# License
+This project is licensed under the MIT License.
